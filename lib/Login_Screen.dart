@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:landing_page/register.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -99,7 +100,12 @@ class _MyLoginState extends State<LoginScreen> {
                             children: [
                               TextButton(
                                 onPressed: () {
-                                  Navigator.pushNamed(context, 'register');
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => MyRegister()));
+
+                                  // Navigator.pushNamed(context, 'register');
                                 },
                                 child: Text(
                                   'Sign Up',
