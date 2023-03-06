@@ -94,7 +94,7 @@ class HomePage extends StatelessWidget {
                   onPressed: () {},
                   child: Text('Shop Now'),
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.black,
+                    // primary: Colors.black,
                     shape: StadiumBorder(),
                   ),
                 ),

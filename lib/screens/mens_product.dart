@@ -20,14 +20,14 @@ class MensPage extends StatelessWidget {
                 mainAxisSpacing: 15.0,
                 childAspectRatio: 0.8,
                 children: <Widget>[
-                  _buildCard('Cookie mint', '\399.00', 'assets/cookiemint.jpg',
-                      false, false, context),
+                  _buildCard('Cookie mint', '\399.00',
+                      'assets/images/tshirt.jpg', false, false, context),
                   _buildCard('Cookie cream', '\399.00',
-                      'assets/cookiecream.jpg', true, false, context),
+                      'assets/images/tshirt.jpg', true, false, context),
                   _buildCard('Cookie classic', '\399.00',
-                      'assets/cookieclassic.jpg', false, true, context),
+                      'assets/images/tshirt.jpg', false, true, context),
                   _buildCard('Cookie choco', '\399.00',
-                      'assets/cookiechoco.jpg', false, false, context)
+                      'assets/images/tshirt.jpg', false, false, context)
                 ],
               )),
           SizedBox(height: 15.0)
@@ -82,12 +82,12 @@ class MensPage extends StatelessWidget {
                   SizedBox(height: 7.0),
                   Text(price,
                       style: TextStyle(
-                          color: Color(0xFFCC8053),
+                          color: Colors.blue,
                           fontFamily: 'Varela',
                           fontSize: 14.0)),
                   Text(name,
                       style: TextStyle(
-                          color: Color(0xFF575E67),
+                          color: Colors.blue,
                           fontFamily: 'Varela',
                           fontSize: 14.0)),
                   Padding(
@@ -100,24 +100,24 @@ class MensPage extends StatelessWidget {
                           children: [
                             if (!added) ...[
                               Icon(Icons.shopping_basket,
-                                  color: Color(0xFFD17E50), size: 12.0),
+                                  color: Colors.blue, size: 12.0),
                               Text('Add to cart',
                                   style: TextStyle(
                                       fontFamily: 'Varela',
-                                      color: Color(0xFFD17E50),
+                                      color: Colors.blue,
                                       fontSize: 12.0))
                             ],
                             if (added) ...[
                               Icon(Icons.remove_circle_outline,
-                                  color: Color(0xFFD17E50), size: 12.0),
+                                  color: Colors.blue, size: 12.0),
                               Text('3',
                                   style: TextStyle(
                                       fontFamily: 'Varela',
-                                      color: Color(0xFFD17E50),
+                                      color: Colors.blue,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 12.0)),
                               Icon(Icons.add_circle_outline,
-                                  color: Color(0xFFD17E50), size: 12.0),
+                                  color: Colors.blue, size: 12.0),
                             ]
                           ]))
                 ]))));
