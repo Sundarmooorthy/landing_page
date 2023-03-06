@@ -68,6 +68,141 @@ class HomePage extends StatelessWidget {
                 //   text: 'Profile',
                 // ),
               ]),
+          drawer: Drawer(
+              child: ListView(
+            children: [
+              DrawerHeader(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 15.0,
+                    horizontal: 15.0,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text('Sundar Moorthy'),
+                      CircleAvatar(
+                        backgroundColor: Colors.white70,
+                        radius: 35,
+                        child: CircleAvatar(
+                          backgroundImage: NetworkImage(
+                              "https://i.insider.com/5e820b04671de06758588fb8?width=700"),
+                          radius: 30,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              ListTile(
+                title: Text(
+                  'Men',
+                  style: TextStyle(color: Colors.black),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                title: Text(
+                  'Women',
+                  style: TextStyle(color: Colors.black),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                title: Text(
+                  'Accessories',
+                  style: TextStyle(color: Colors.black),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                title: Text(
+                  'Earings',
+                  style: TextStyle(color: Colors.black),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                title: Text(
+                  'Shoes',
+                  style: TextStyle(color: Colors.black),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                title: Text(
+                  'Sale',
+                  style: TextStyle(color: Colors.black),
+                ),
+                onTap: () {},
+              ),
+              Divider(
+                color: Colors.black,
+              ),
+              ListTile(
+                title: Text(
+                  'Sign in',
+                  style: TextStyle(color: Colors.black),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                title: Text(
+                  'Create account ',
+                  style: TextStyle(color: Colors.black),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                title: Text(
+                  'whishlist',
+                  style: TextStyle(color: Colors.black),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                title: Text(
+                  'Orders',
+                  style: TextStyle(color: Colors.black),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                title: Text(
+                  'Gift Cards',
+                  style: TextStyle(color: Colors.black),
+                ),
+                onTap: () {},
+              ),
+              Divider(
+                color: Colors.black,
+              ),
+              ListTile(
+                title: Text(
+                  'About',
+                  style: TextStyle(color: Colors.black),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                title: Text(
+                  'Contact ',
+                  style: TextStyle(color: Colors.black),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                title: Text(
+                  'FAQ',
+                  style: TextStyle(color: Colors.black),
+                ),
+                onTap: () {},
+              ),
+            ],
+          )),
           body: Padding(
             padding:
                 const EdgeInsets.symmetric(horizontal: 15.0, vertical: 15.0),
@@ -94,7 +229,7 @@ class HomePage extends StatelessWidget {
                   onPressed: () {},
                   child: Text('Shop Now'),
                   style: ElevatedButton.styleFrom(
-                    // primary: Colors.black,
+                    primary: Colors.black,
                     shape: StadiumBorder(),
                   ),
                 ),

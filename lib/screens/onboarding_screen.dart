@@ -39,18 +39,6 @@ class _OnbordingState extends State<Onbording> {
       ),
       child: Column(
         children: [
-          Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              TextButton(
-                onPressed: () {},
-                child: Text(
-                  'Skip',
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-            ],
-          ),
           SizedBox(
             height: 300,
           ),
@@ -101,7 +89,7 @@ class _OnbordingState extends State<Onbording> {
             ),
           ),
           Container(
-            height: 60,
+            height: 50,
             margin: EdgeInsets.all(40),
             width: double.infinity,
             decoration: ShapeDecoration(
@@ -127,7 +115,7 @@ class _OnbordingState extends State<Onbording> {
                 }
                 _controller.nextPage(
                   duration: Duration(milliseconds: 100),
-                  curve: Curves.bounceIn,
+                  curve: Curves.bounceInOut,
                 );
               },
               // color: Theme.of(context).primaryColor,

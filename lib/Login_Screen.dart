@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:landing_page/register.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+class LoginScreendemo extends StatefulWidget {
+  const LoginScreendemo({Key? key}) : super(key: key);
 
   @override
   _MyLoginState createState() => _MyLoginState();
 }
 
-class _MyLoginState extends State<LoginScreen> {
+class _MyLoginState extends State<LoginScreendemo> {
   @override
   Widget build(BuildContext context) {
     return Container(
